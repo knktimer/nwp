@@ -1,0 +1,96 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.certificate {
+    border: 5px solid #2c3e50;
+    padding: 20px;
+    position: relative;
+}
+
+.certificate-logo {
+    text-align: center;
+}
+
+.certificate-logo img {
+    width: 150px;
+    height: auto;
+}
+
+.certificate-title {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.certificate-text {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.certificate-recipient {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.signature-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.signature-img {
+    width: 100px;
+}
+
+.signature-position {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.date {
+    text-align: right;
+}
+
+.certificate-seal {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+}
+
+.certificate-seal img {
+    width: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .signature-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}

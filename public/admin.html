@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Access</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Access: View Generated Gift Codes</h1>
+        <form id="adminLoginForm">
+            <input type="password" id="adminPassword" placeholder="Enter Admin Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="adminContent" style="display: none;">
+            <h2>Generated Certificates</h2>
+            <ul id="giftCodeList"></ul>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Certificate Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@400;700&family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Your Secure Certificate</h1>
+        <form id="certificateForm" class="certificate-form">
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+            <input type="text" id="course" placeholder="Enter Course Name" required>
+            <input type="text" id="instructor" placeholder="Instructor Name" required>
+            <select id="font-style">
+                <option value="Great Vibes">Great Vibes (Elegant)</option>
+                <option value="Roboto">Roboto (Modern)</option>
+                <option value="Playfair Display">Playfair Display (Formal)</option>
+            </select>
+            <input type="color" id="color" value="#27ae60">
+            <input type="password" id="giftCode" placeholder="Enter Gift Code" required>
+            <button type="submit" class="generate-button">Generate Secure Certificate</button>
+        </form>
+
+        <div id="certificateBox" class="certificate-box" style="display: none;">
+            <div class="certificate">
+                <div class="certificate-logo">
+                    <img src="https://i.imgur.com/AMyWPjT.png" alt="Institution Logo" class="logo">
+                </div>
+                <h1 class="certificate-title">Certificate of Completion</h1>
+                <p class="certificate-text">This is to certify that</p>
+                <h2 id="recipient-name" class="certificate-recipient"></h2>
+                <p class="certificate-text">has successfully completed the course</p>
+                <h3 id="course-name" class="course-name"></h3>
+                <div class="signature-section">
+                    <div class="signature">
+                        <img src="https://i.imgur.com/Oj1DqwB.png" alt="Signature" class="signature-img">
+                        <p id="instructor-name" class="signature-name"></p>
+                        <p class="signature-position">Course Instructor</p>
+                    </div>
+                    <div class="date">
+                        <p>Date: <span id="date"></span></p>
+                        <p>Certificate ID: <span id="certificate-id"></span></p>
+                    </div>
+                </div>
+                <div class="certificate-seal">
+                    <img src="https://i.imgur.com/dPrqnXZ.png" alt="Official Seal" class="seal">
+                </div>
+            </div>
+        </div>
+
+        <div id="certificateContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
